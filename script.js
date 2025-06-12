@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const caixaPerguntas = document.querySelector(".caixa-perguntas");
     const caixaAlternativas = document.querySelector(".caixa-alternativas");
-    const caixaResultado = document.querySelector(".caixa-resultado");
-    const textoResultado = document.querySelector(".texto-resultado");
+    const caixaResultado = document.querySelector(".texto-resultado");
 
     const perguntas = [
         {
@@ -25,28 +24,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 { texto: "Sou prático e direto na abordagem.", tipo: "pratico" },
                 { texto: "Sempre mantenho um ambiente equilibrado.", tipo: "mediador" },
                 { texto: "Meu objetivo é garantir que todos estejam confortáveis.", tipo: "empático" }
-            ]
-        },
-        {
-            enunciado: "O que te motiva a liderar?",
-            alternativas: [
-                { texto: "Criar algo novo e impactante.", tipo: "visionario" },
-                { texto: "Tomar decisões bem planejadas.", tipo: "estrategico" },
-                { texto: "Ajudar os outros a alcançar seus objetivos.", tipo: "inspirador" },
-                { texto: "Obter resultados rápidos e eficazes.", tipo: "pratico" },
-                { texto: "Facilitar o trabalho em equipe e resolver conflitos.", tipo: "mediador" },
-                { texto: "Garantir que todos se sintam valorizados.", tipo: "empático" }
-            ]
-        },
-        {
-            enunciado: "Qual estratégia você usa para tomar decisões difíceis?",
-            alternativas: [
-                { texto: "Busco sempre inovar e sair da zona de conforto.", tipo: "visionario" },
-                { texto: "Analiso todos os fatores antes de decidir.", tipo: "estrategico" },
-                { texto: "Confio na minha intuição e sentimentos.", tipo: "inspirador" },
-                { texto: "Prefiro decidir de forma lógica e eficiente.", tipo: "pratico" },
-                { texto: "Converso com todos antes de decidir.", tipo: "mediador" },
-                { texto: "Evito decisões impulsivas e prefiro esperar o momento certo.", tipo: "cauteloso" }
             ]
         }
     ];
@@ -78,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (atual < perguntas.length) {
             mostraPergunta();
         } else {
-            mostraResultado();
+            setTimeout(mostraResultado, 500); // Pequeno atraso para evitar erro de exibição prematura
         }
     }
 
@@ -91,9 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "inspirador": "Você é um **líder inspirador**! Sua motivação é guiar e motivar os outros a alcançar grandes objetivos.",
             "pratico": "Você é um **líder prático**! Seu foco está em resolver problemas de forma objetiva e eficiente.",
             "mediador": "Você é um **líder mediador**! Sua prioridade é equilibrar opiniões e garantir harmonia na equipe.",
-            "empático": "Você é um **líder empático**! Seu foco está em cuidar do bem-estar dos outros e criar um ambiente acolhedor.",
-            "reflexivo": "Você é um **líder reflexivo**! Prefere aprender com cada situação antes de agir.",
-            "cauteloso": "Você é um **líder cauteloso**! Sempre busca tomar decisões seguras e evitar riscos desnecessários."
+            "empático": "Você é um **líder empático**! Seu foco está em cuidar do bem-estar dos outros e criar um ambiente acolhedor."
         };
 
         caixaResultado.innerHTML = `<p>${resultadoTexto[tipoEscolhido]}</p>`;

@@ -1,10 +1,11 @@
 :root{
-    --cor-fundo: #f5f5f5; /* Um tom neutro e suave */
-    --cor-principal: #87a8a5; /* Azul esverdeado para tranquilidade */
-    --cor-secundaria: #a3c9a8; /* Verde suave para equilíbrio */
-    --cor-destaque: #f4c2c2; /* Rosa claro para acolhimento */
-    --cor-texto: #3b3b3b; /* Cinza escuro para conforto visual */
+    --cor-fundo: #eceff1;
+    --cor-principal: #607d8b;
+    --cor-secundaria: #8bc34a;
+    --cor-destaque: #ffb74d;
+    --cor-texto: #37474f;
 }
+
 
 
 body{

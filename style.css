@@ -1,6 +1,6 @@
 :root {
-  --cor-fundo: #0400ff; /* Preto suave para um fundo elegante */
-  --cor-principal: #0074f8; /* Azul violeta profundo para requinte */
+  --cor-fundo: #d400ff; /* Preto suave para um fundo elegante */
+  --cor-principal: #0400ff;; /* Azul violeta profundo para requinte */
   --cor-secundaria: #f1d793; /* Dourado envelhecido para sofisticação */
   --cor-destaque: #4fe3ee; /* Vermelho escuro para um toque de impacto */
   --cor-texto: #ffffff; /* Cinza claro para leitura confortável */

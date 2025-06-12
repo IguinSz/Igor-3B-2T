@@ -1,9 +1,9 @@
 :root {
-   --cor-fundo: #000000;
-    --cor-principal: #838383 ;
-    --cor-secundaria: #db1313;
-    --cor-destaque: #fceb00;
-    --cor-texto: #ffffff;
+  --cor-fundo: #2E2E2E; /* Cinza escuro para um fundo discreto */
+  --cor-principal: #6A5ACD; /* Azul lavanda para um toque criativo */
+  --cor-secundaria: #C0C0C0; /* Prata suave para elegância */
+  --cor-destaque: #8FBC8F; /* Verde sálvia para um toque natural */
+  --cor-texto: #F5F5DC; /* Bege claro para leitura confortável */
 }
 
 

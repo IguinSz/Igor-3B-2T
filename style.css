@@ -1,9 +1,9 @@
 :root{
-    --cor-fundo: #eceff1;
-    --cor-principal: #607d8b;
-    --cor-secundaria: #8bc34a;
-    --cor-destaque: #ffb74d;
-    --cor-texto: #37474f;
+  --cor-fundo: #e3f2fd; /* Azul claro para leveza e serenidade */
+    --cor-principal: #5c6bc0; /* Azul médio para confiança */
+    --cor-secundaria: #81c784; /* Verde suave para equilíbrio e bem-estar */
+    --cor-destaque: #ffd54f; /* Amarelo suave para estímulo e positividade */
+    --cor-texto: #263238; /* Azul petróleo para conforto visual */
 }
 
 

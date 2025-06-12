@@ -1,8 +1,8 @@
 :root{
-    --cor-fundo: #000000;
-    --cor-principal: #111111 ;
-    --cor-secundaria: #db1313;
-    --cor-destaque: #fceb00;
+    --cor-fundo: #1b1b1b;
+    --cor-principal: #252525;
+    --cor-secundaria: #ff5733; /* Um tom mais vibrante */
+    --cor-destaque: #ffcc00; /* Um amarelo mais suave e alegre */
     --cor-texto: #ffffff;
 }
 
@@ -10,9 +10,20 @@ body{
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    max-width: 100px; /* Ajuste do tamanho do logo */
 }
 
 .caixa-principal{
@@ -56,6 +67,8 @@ button:hover{
 
 .link{
     color: var(--cor-secundaria);
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .link:hover{

@@ -25,6 +25,39 @@ document.addEventListener("DOMContentLoaded", function() {
                 { texto: "Sempre mantenho um ambiente equilibrado.", tipo: "mediador" },
                 { texto: "Meu objetivo é garantir que todos estejam confortáveis.", tipo: "empático" }
             ]
+        },
+        {
+            enunciado: "O que te motiva a liderar?",
+            alternativas: [
+                { texto: "Criar algo novo e impactante.", tipo: "visionario" },
+                { texto: "Tomar decisões bem planejadas.", tipo: "estrategico" },
+                { texto: "Ajudar os outros a alcançar seus objetivos.", tipo: "inspirador" },
+                { texto: "Obter resultados rápidos e eficazes.", tipo: "pratico" },
+                { texto: "Facilitar o trabalho em equipe e resolver conflitos.", tipo: "mediador" },
+                { texto: "Garantir que todos se sintam valorizados.", tipo: "empático" }
+            ]
+        },
+        {
+            enunciado: "Qual estratégia você usa para tomar decisões difíceis?",
+            alternativas: [
+                { texto: "Busco sempre inovar e sair da zona de conforto.", tipo: "visionario" },
+                { texto: "Analiso todos os fatores antes de decidir.", tipo: "estrategico" },
+                { texto: "Confio na minha intuição e sentimentos.", tipo: "inspirador" },
+                { texto: "Prefiro decidir de forma lógica e eficiente.", tipo: "pratico" },
+                { texto: "Converso com todos antes de decidir.", tipo: "mediador" },
+                { texto: "Evito decisões impulsivas e prefiro esperar o momento certo.", tipo: "cauteloso" }
+            ]
+        },
+        {
+            enunciado: "Como você lida com feedbacks construtivos?",
+            alternativas: [
+                { texto: "Uso para melhorar e evoluir minhas ideias.", tipo: "visionario" },
+                { texto: "Analiso cada ponto e ajusto minha abordagem.", tipo: "estrategico" },
+                { texto: "Valorizo opiniões e adapto minha postura.", tipo: "inspirador" },
+                { texto: "Ajo de maneira pragmática, focando em soluções.", tipo: "pratico" },
+                { texto: "Busco equilibrar as críticas e manter a harmonia.", tipo: "mediador" },
+                { texto: "Aceito com cuidado e reflito antes de mudar algo.", tipo: "cauteloso" }
+            ]
         }
     ];
 
@@ -55,6 +88,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (atual < perguntas.length) {
             mostraPergunta();
         } else {
+            caixaPerguntas.style.display = "none"; // Oculta a pergunta ao responder a última
             setTimeout(mostraResultado, 500); // Pequeno atraso para evitar erro de exibição prematura
         }
     }
@@ -68,7 +102,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "inspirador": "Você é um **líder inspirador**! Sua motivação é guiar e motivar os outros a alcançar grandes objetivos.",
             "pratico": "Você é um **líder prático**! Seu foco está em resolver problemas de forma objetiva e eficiente.",
             "mediador": "Você é um **líder mediador**! Sua prioridade é equilibrar opiniões e garantir harmonia na equipe.",
-            "empático": "Você é um **líder empático**! Seu foco está em cuidar do bem-estar dos outros e criar um ambiente acolhedor."
+            "empático": "Você é um **líder empático**! Seu foco está em cuidar do bem-estar dos outros e criar um ambiente acolhedor.",
+            "cauteloso": "Você é um **líder cauteloso**! Sempre busca tomar decisões seguras e evitar riscos desnecessários."
         };
 
         caixaResultado.innerHTML = `<p>${resultadoTexto[tipoEscolhido]}</p>`;

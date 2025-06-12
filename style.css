@@ -1,13 +1,10 @@
-:root{
-  --cor-fundo: #0e0b16; /* Fundo escuro para elegância */
-  --cor-principal: #a239ca; /* Roxo vibrante para criatividade */
-  --cor-secundaria: #4717f6; /* Azul marcante para inteligência */
-  --cor-destaque: #ff5733; /* Laranja intenso para dinamismo */
-  --cor-texto: #f8f8ff; /* Branco suave para contraste */
+:root {
+  --cor-fundo: #1c1c1c; /* Preto elegante para sofisticação */
+  --cor-principal: #8a2be2; /* Roxo profundo para requinte */
+  --cor-secundaria: #d4af37; /* Dourado clássico para destaque */
+  --cor-destaque: #4682b4; /* Azul acinzentado para equilíbrio */
+  --cor-texto: #f5f5f5; /* Branco suave para contraste e leitura */
 }
-
-
-
 
 body{
     background-color: var(--cor-fundo);

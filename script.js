@@ -1,23 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const caixaPrincipal = document.createElement("div");
-    caixaPrincipal.classList.add("caixa-principal");
-    document.body.appendChild(caixaPrincipal);
-
-    const caixaPerguntas = document.createElement("div");
-    caixaPerguntas.classList.add("caixa-perguntas");
-    caixaPrincipal.appendChild(caixaPerguntas);
-
-    const caixaAlternativas = document.createElement("div");
-    caixaAlternativas.classList.add("caixa-alternativas");
-    caixaPrincipal.appendChild(caixaAlternativas);
-
-    const caixaResultado = document.createElement("div");
-    caixaResultado.classList.add("caixa-resultado");
-    caixaPrincipal.appendChild(caixaResultado);
-
-    const textoResultado = document.createElement("div");
-    textoResultado.classList.add("texto-resultado");
-    caixaResultado.appendChild(textoResultado);
+    const caixaPerguntas = document.querySelector(".caixa-perguntas");
+    const caixaAlternativas = document.querySelector(".caixa-alternativas");
+    const caixaResultado = document.querySelector(".caixa-resultado");
+    const textoResultado = document.querySelector(".texto-resultado");
 
     const perguntas = [
         {
@@ -76,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         caixaPerguntas.textContent = perguntas[atual].enunciado;
-        caixaAlternativas.textContent = "";
+        caixaAlternativas.innerHTML = "";
 
         perguntas[atual].alternativas.forEach(alternativa => {
             const botao = document.createElement("button");
@@ -89,7 +74,12 @@ document.addEventListener("DOMContentLoaded", function() {
     function respostaSelecionada(tipo) {
         escolhas[tipo] = (escolhas[tipo] || 0) + 1;
         atual++;
-        mostraPergunta();
+
+        if (atual < perguntas.length) {
+            mostraPergunta();
+        } else {
+            mostraResultado();
+        }
     }
 
     function mostraResultado() {
@@ -106,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "cauteloso": "Você é um **líder cauteloso**! Sempre busca tomar decisões seguras e evitar riscos desnecessários."
         };
 
-        textoResultado.innerHTML = `<h2>${resultadoTexto[tipoEscolhido]}</h2>`;
+        caixaResultado.innerHTML = `<p>${resultadoTexto[tipoEscolhido]}</p>`;
     }
 
     mostraPergunta();

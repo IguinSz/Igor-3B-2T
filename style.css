@@ -1,10 +1,11 @@
 :root{
-  --cor-fundo: #001ec5; 
-    --cor-principal: #5fccff; 
-    --cor-secundaria: #ca1313; 
-    --cor-destaque: #e4e006; 
-    --cor-texto: #263238; 
+  --cor-fundo: #0e0b16; /* Fundo escuro para elegância */
+  --cor-principal: #a239ca; /* Roxo vibrante para criatividade */
+  --cor-secundaria: #4717f6; /* Azul marcante para inteligência */
+  --cor-destaque: #ff5733; /* Laranja intenso para dinamismo */
+  --cor-texto: #f8f8ff; /* Branco suave para contraste */
 }
+
 
 
 

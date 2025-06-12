@@ -1,10 +1,11 @@
 :root {
-  --cor-fundo: #1c1c1c; /* Preto elegante para sofisticação */
-  --cor-principal: #8a2be2; /* Roxo profundo para requinte */
-  --cor-secundaria: #d4af37; /* Dourado clássico para destaque */
-  --cor-destaque: #4682b4; /* Azul acinzentado para equilíbrio */
-  --cor-texto: #f5f5f5; /* Branco suave para contraste e leitura */
+  --cor-fundo: #121212; /* Preto suave para um fundo elegante */
+  --cor-principal: #483D8B; /* Azul violeta profundo para requinte */
+  --cor-secundaria: #D4A017; /* Dourado envelhecido para sofisticação */
+  --cor-destaque: #8B0000; /* Vermelho escuro para um toque de impacto */
+  --cor-texto: #EAEAEA; /* Cinza claro para leitura confortável */
 }
+
 
 body{
     background-color: var(--cor-fundo);

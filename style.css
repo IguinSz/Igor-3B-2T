@@ -46,9 +46,11 @@ h1{
 }
 
 .texto-resultado{
-    color: var(--cor-destaque);
-    font-size: 20px;
+    color: #000000; /* Preto para maior destaque */
+    font-size: 24px; /* Maior tamanho para resposta final */
+    font-weight: bold;
 }
+
 
 button{
     background-color: var(--cor-secundaria);
